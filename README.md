@@ -11,6 +11,7 @@ mkdir alpine-js-fun
 cd alpine-js-fun
 git init
 touch .gitignore
+echo "# alpine-js-fun" >> README.md
 yarn init
 yarn add -D webpack webpack-cli html-webpack-plugin
 yarn add alpinejs 
@@ -21,5 +22,7 @@ mkdir src
 touch src/index.js
 git add .
 git commit -m "init"
-git push
+git branch -M main
+git remote add origin https://github.com/{{user}}/{{repo_name}}.git
+git push -u origin main
 ```
